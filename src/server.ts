@@ -46,7 +46,7 @@ if (!secretKey) {
 }
 
 app.use(cors({
-    origin: ['https://vercel.com/gugaslitoficials-projects/frontend-task-manager', 'https://localhost:3000']
+    origin: ['https://frontend-task-manager-three.vercel.app/', 'https://localhost:3000']
 }));  
 
 // Conexão com o banco de dados
