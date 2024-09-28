@@ -45,7 +45,9 @@ if (!secretKey) {
     throw new Error('Chave secreta não definida nas variáveis de ambiente.');
 }
 
-app.use(cors());  
+app.use(cors({
+    origin: ['https://vercel.com/gugaslitoficials-projects/frontend-task-manager', 'https://localhost:3000']
+}));  
 
 // Conexão com o banco de dados
 const db = mysql.createConnection({
