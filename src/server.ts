@@ -46,7 +46,8 @@ if (!secretKey) {
 }
 
 app.use(cors({
-    origin: ['https://frontend-task-manager-three.vercel.app', 'https://localhost:3000']
+    origin: true,
+    credentials: true
 }));  
 
 // Conexão com o banco de dados
